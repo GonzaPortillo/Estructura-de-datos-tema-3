@@ -1,12 +1,12 @@
-# Estructuras lineales
+  # Estructuras lineales
 
 ## Indice
 1. Índice
 2. Introducción
 3. Investigación
-4. Reporte práctico
-5. Conclusiones
-6. Referencias
+4. Operaciones Basicas
+5. Codigos en java
+6. Conclusiones
 
 ## Introduccion
 
@@ -24,47 +24,248 @@ Una cola en estructura de datos es una colección lineal de elementos en la que 
 Una lista en estructura de datos es una colección ordenada de elementos donde cada elemento puede tener una posición relativa dentro de la lista. A diferencia de las estructuras de datos como las pilas y las colas, que tienen restricciones en cómo se pueden agregar y quitar elementos (LIFO para pilas y FIFO para colas), las listas permiten la inserción y eliminación en cualquier posición.
 
 Existen diferentes tipos de listas en estructuras de datos, pero las dos más comunes son:
-Lista enlazada:
 
-● En una lista enlazada, cada elemento (llamado nodo) contiene tanto el valor del elemento como una referencia (enlace) al siguiente elemento en la lista.
+Lista enlazada:
+* En una lista enlazada, cada elemento (llamado nodo) contiene tanto el valor del elemento como una referencia (enlace) al siguiente elemento en la lista.
 
 Lista basada en arreglo (array list):
-
-● Una lista basada en arreglo almacena los elementos en un arreglo contiguo de memoria, donde cada elemento tiene una posición fija.
+* Una lista basada en arreglo almacena los elementos en un arreglo contiguo de memoria, donde cada elemento tiene una posición fija.
 
 Las listas en estructuras de datos son fundamentales en la programación y se utilizan ampliamente en una variedad de aplicaciones. Son útiles cuando se necesita una colección de elementos que pueda crecer o disminuir dinámicamente y donde se requiera acceso eficiente a los elementos en posiciones arbitrarias.
 
 ## Operaciones Basicas
 
 ### Pila (Stack)
-Push: push(value)
-Añade un elemento al tope de la pila. Tiempo de operación: O(1).
-Pop: pop()
-Elimina y devuelve el elemento del tope de la pila. Tiempo de operación: O(1).
-Peek (o Top): peek()
-Devuelve el elemento del tope sin eliminarlo. Tiempo de operación: O(1).
+* Push: push(value)
+* Pop: pop()
+* Peek (o Top): peek()
 
+### Cola (Queue)
+*Enqueue: enqueue(value)
+*Dequeue: dequeue()
+*Front (o Peek): front()
+*IsEmpty: isEmpty()
+
+### Lista (List)
+* Acceso: get(index)
+* Inserción al inicio: addFirst(value)
+* Inserción al final: addLast(value)
+* Inserción en una posición: insert(index, value)
+* Eliminación al inicio: removeFirst()
+* Eliminación al final: removeLast()
+* Eliminación en una posición: remove(index)
+* Búsqueda: find(value)
+
+## Codigos en Java
+
+### Pila (Stack)
+
+    import java.util.ArrayList;
+    import java.util.EmptyStackException;
+
+    public class PilaLista {
+        private ArrayList<Integer> list = new ArrayList<>();
+
+        public void Agregar(int value) {
+            list.add(value);
+        }
+
+        public int Eliminar() {
+            if (EstaVacia()) {
+                throw new EmptyStackException();
+            }
+            int value = list.get(list.size() - 1);
+            list.remove(list.size() - 1);
+            return value;
+        }
+
+        public int Devuelve() {
+            if (EstaVacia()) {
+                throw new EmptyStackException();
+            }
+            return list.get(list.size() - 1);
+        }
+
+        public boolean EstaVacia() {
+            return list.isEmpty();
+        }
+
+        public int getSize() {
+            return list.size();
+        }
+    }
+
+    public class main {
+        public static void main(String[] args) {
+            PilaLista stack = new PilaLista();
+            stack.Agregar(1);
+            stack.Agregar(2);
+            stack.Agregar(3);
+            stack.Agregar(4);
+            stack.Agregar(5);
+            stack.Agregar(6);
+
+            System.out.println("Peek: " + stack.Devuelve());
+            System.out.println("Pop: " + stack.Eliminar());
+            System.out.println("Peek: " + stack.Devuelve());
+            System.out.println("Size: " + stack.getSize());
+            System.out.println("Is empty: " + stack.EstaVacia());
+        }
+    }
 
 ### Cola (Queue)
 
+    public class Queue<T> {
+        private Node<T> front;
+        private Node<T> rear;
+
+        // Constructor
+        public Queue() {
+            front = null;
+            rear = null;
+        }
+
+        // Método para comprobar si la cola está vacía
+        public boolean isEmpty() {
+            return front == null;
+        }
+
+        // Método para agregar un elemento al final de la cola
+        public void enqueue(T data) {
+            Node<T> newNode = new Node<>(data);
+            if (isEmpty()) {
+                front = newNode;
+                rear = newNode;
+            } else {
+                rear.next = newNode;
+                rear = newNode;
+            }
+        }
+
+        // Método para eliminar y devolver el elemento del frente de la cola
+        public T dequeue() {
+            if (isEmpty()) {
+                throw new IllegalStateException("La cola está vacía");
+            }
+            T data = front.data;
+            if (front == rear) {
+                front = null;
+                rear = null;
+            } else {
+              front = front.next;
+            }
+            return data;
+        }
+
+        // Método para obtener el elemento del frente de la cola sin eliminarlo
+        public T peek() {
+            if (isEmpty()) {
+                throw new IllegalStateException("La cola está vacía");
+            }
+            return front.data;
+        }
+
+        private static class Node<T> {
+            private T data;
+            private Node<T> next;
+
+            // Constructor de Nodo
+            public Node(T data) {
+                this.data = data;
+                this.next = null;
+            }
+        }
+    }
+    
+    public class Main {
+        public static void main(String[] args) {
+            Queue<Integer> queue = new Queue<>();
+
+            // Agregando elementos a la cola
+            queue.enqueue(10);
+            queue.enqueue(26);
+            queue.enqueue(36);
+
+            System.out.println("Elementos de la cola: ");
+            while (!queue.isEmpty()) {
+                System.out.println(queue.dequeue());
+            }
+        }
+    }
+
+
 ### Lista (List)
-●Acceso: get(index)
 
-●Inserción al inicio: addFirst(value)
+    public class Lista {
+        private int maxSize;
+        private int[] listaArray;
 
-●Inserción al final: addLast(value)
+        public Lista(int size) {
+            this.maxSize = size;
+            listaArray = new int[maxSize];
+        }
 
-●Inserción en una posición: insert(index, value)
+        public void add(int element) {
+            if (size() < maxSize) {
+                listaArray[size()] = element;
+            } else {
+                System.out.println("List is full. Cannot add " + element);
+            }
+        }
 
-●Eliminación al inicio: removeFirst()
+        public int get(int index) {
+            if (index >= 0 && index < size()) {
+                return listaArray[index];
+            } else {
+                System.out.println("Index out of bounds.");
+                return -1;
+            }
+        }
 
-●Eliminación al final: removeLast()
+        public void remove(int index) {
+            if (index >= 0 && index < size()) {
+                for (int i = index; i < size() - 1; i++) {
+                    listaArray[i] = listaArray[i + 1];
+                }
+                listaArray[size() - 1] = 0;
+            } else {
+                System.out.println("Index out of bounds.");
+            }
+        }
+        
+        public int size() {
+            int count = 0;
+            for (int i = 0; i < maxSize; i++) {
+                if (listaArray[i]!= 0) {
+                    count++;
+                }
+            }
+            return count;
+        }
 
-●Eliminación en una posición: remove(index)
+        public boolean isEmpty() {
+            return (size() == 0);
+        }
+    }
 
-●Búsqueda: find(value)
+    public class Main {
+        public static void main(String[] args) {
+            Lista mylist = new Lista (5);
+            myList.add(10);
+            myList.add(20);
+            myList.add(30);
+            myList.add(40);
+            myList.add(50);
+            
+            System.out.println("Tamaño de lista: "+yList.size());
+            System.out.println("Elemento en el indice 2: "+ ylist.get(2));
+            System.out.println("¿La lista esta vacía? + List.isEmpty());
+            myList.remove(2);
+            System.out.println("Tamaño de la lista despues de eliminar el elemento del indice 2: ByList.size());
+            System.out.println("Elemento en el indice 2 despues de eliminar: mycist.get(2));
+        }
+    }
 
-## Codigo en Java
-## Resultados 
 ## Conclusiones
-## Referencias
+
+Las pilas, colas y listas son pilares fundamentales en la programación y la informática, proporcionando herramientas esenciales para la gestión eficiente de datos, la implementación de algoritmos y la optimización de sistemas informáticos y de software. Su comprensión y dominio son fundamentales para cualquier desarrollador de software que busque crear aplicaciones robustas y eficientes.
