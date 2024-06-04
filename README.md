@@ -37,6 +37,13 @@ Las listas en estructuras de datos son fundamentales en la programación y se ut
 ## Operaciones Basicas
 
 ### Pila (Stack)
+Push: push(value)
+Añade un elemento al tope de la pila. Tiempo de operación: O(1).
+Pop: pop()
+Elimina y devuelve el elemento del tope de la pila. Tiempo de operación: O(1).
+Peek (o Top): peek()
+Devuelve el elemento del tope sin eliminarlo. Tiempo de operación: O(1).
+
 
 ### Cola (Queue)
 
