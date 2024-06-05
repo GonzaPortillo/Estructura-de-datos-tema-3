@@ -10,8 +10,11 @@
     * [Stack](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#pila-stack-1)
     * [Queue](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#cola-queue-1)
     * [List](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#lista-list-1)
-5. [Implementacion en java]()
-6. [Conclusiones]()
+4. [Implementacion en java]()
+    * [Stack](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#pila-stack-1)
+    * [Queue](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#cola-queue-1)
+    * [List](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#lista-list-1)
+5. [Conclusiones]()
 
 ## Introduccion
 
@@ -61,7 +64,7 @@ Las listas en estructuras de datos son fundamentales en la programación y se ut
 * Eliminación en una posición: remove(index)
 * Búsqueda: find(value)
 
-## Codigos en Java
+## Implementacion en Java
 
 ### Pila (Stack)
 
