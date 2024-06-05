@@ -14,7 +14,7 @@
     * [Stack](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#pila-stack-2)
     * [Queue](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#cola-queue-2)
     * [List](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#lista-list-2)
-5. [Conclusiones]()
+5. [Conclusiones](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#conclusiones)
 
 ## Introduccion
 
