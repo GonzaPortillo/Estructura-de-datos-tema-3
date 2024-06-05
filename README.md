@@ -12,7 +12,7 @@
     * [List](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#lista-list-1)
 4. [Implementacion en java](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#implementacion-en-java)
     * [Stack](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#pila-stack-2)
-    * [Queue]
+    * [Queue](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#cola-queue-2)
     * [List]
 5. [Conclusiones]()
 
