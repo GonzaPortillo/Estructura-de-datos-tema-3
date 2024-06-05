@@ -8,7 +8,7 @@
     * [List](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#lista-list)
 3. [Operaciones Basicas](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#operaciones-basicas)
     * [Stack](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#pila-stack-1)
-    * [Queue]
+    * [Queue](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#cola-queue-1)
     * [List]
 5. [Implementacion en java]
 6. [Conclusiones]
@@ -46,10 +46,10 @@ Las listas en estructuras de datos son fundamentales en la programación y se ut
 * Peek (o Top): peek()
 
 ### Cola (Queue)
-*Enqueue: enqueue(value)
-*Dequeue: dequeue()
-*Front (o Peek): front()
-*IsEmpty: isEmpty()
+* Enqueue: enqueue(value)
+* Dequeue: dequeue()
+* Front (o Peek): front()
+* IsEmpty: isEmpty()
 
 ### Lista (List)
 * Acceso: get(index)
