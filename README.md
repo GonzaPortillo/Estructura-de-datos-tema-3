@@ -1,7 +1,7 @@
   # Estructuras lineales
 
 ## Indice
-1. [Introducción](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#investigacion)
+1. [Introducción](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#introduccion)
 2. [Investigación](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#investigacion)
     * [Stack](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#pila-stack)
     * [Queue](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#cola-queue)
