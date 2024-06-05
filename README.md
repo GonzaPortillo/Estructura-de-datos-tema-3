@@ -9,9 +9,9 @@
 3. [Operaciones Basicas](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#operaciones-basicas)
     * [Stack](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#pila-stack-1)
     * [Queue](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#cola-queue-1)
-    * [List]
-5. [Implementacion en java]
-6. [Conclusiones]
+    * [List](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/blob/main/README.md#lista-list-1)
+5. [Implementacion en java]()
+6. [Conclusiones]()
 
 ## Introduccion
 
