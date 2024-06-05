@@ -2,13 +2,13 @@
 
 ## Indice
 1. [Introducción](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#investigacion)
+2. [Investigación](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#investigacion)
     * [Stack](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#pila-stack)
-    * [Queue]
-    * [List]
-3. [Investigación]
-4. [Operaciones Basicas]
-5. [Implementacion en java]
-6. [Conclusiones]
+    * [Queue](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#cola-queue)
+    * [List](https://github.com/GonzaPortillo/Estructura-de-datos-tema-3/tree/main?tab=readme-ov-file#lista-list)
+3. [Operaciones Basicas]
+4. [Implementacion en java]
+5. [Conclusiones]
 
 ## Introduccion
 
